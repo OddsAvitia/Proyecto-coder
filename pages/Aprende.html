@@ -5,12 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprende</title>
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--favicon-->
     <link rel="shortcut icon" href="../favikachu.ico" type="image/x-icon">
     <!--estilos css-->
     <link rel="stylesheet" href="../ccs/estilos.css">
 </head>
+
 <body>
+    <style>
+        /*estilos base para los enlaces*/
+        a {  /*todos los elementos <a> */
+            display: inline-block;
+            padding: 16px;
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);           
+        }
+
+        a:hover{ /*todos los elemento <a> cuando el mouse este sobre el*/
+            font-weight: bold;
+            padding: 16px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        a:link{ /*todos los elementos <a> que tengan un atributo href definido SIN VISITAR*/
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
     <header class="headerSticky2">
         <div>
             <img class="Logo" src="../assets/img/oddslogonegro.png" alt="Logo Odds Avitia" width="200px">
@@ -18,11 +43,11 @@
 
         <nav>
             <ul>
-                <li><a class="linkNav2" href="./index.html">Inicio</a></li>
-                <li><a class="linkNav2" href="./juegos.html">Juegos</a></li>
-                <li><a class="linkNav2" href="./sobre nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="linkNav2" href="../index.html">Inicio</a></li>
+                <li><a class="linkNav2" href="../pages/juegos.html">Juegos</a></li>
+                <li><a class="linkNav2" href="../pages/sobre nosotros.html">Sobre Nosotros</a></li>
                 <li><a class="linkNav2" href="#">Aprende</a></li>
-                <li><a class="linkNav2" href="./extras.html">Extras</a></li>
+                <li><a class="linkNav2" href="../pages/extras.html">Extras</a></li>
                 <img  src="../assets/img/cafeblanco.png" height="30" width="30" > <a class="linkNav2" href="https://www.patreon.com/OddsAvitia/membership" target="_blank">Cafesito?</a>
             </ul>
         </nav>
@@ -33,12 +58,25 @@
             <h1 class="tamañoTexto">Sabemos que quieres aprender esto..</h1> 
             <center><video src="../assets/video/ellieguitarra.mp4" autoplay muted loop width="100%" height="100%"></video></center>
 
-           <center> <h2>Configura tu OBS studio</h2></center>
-            <center><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joanferplay/video/7129729671104564485" data-video-id="7129729671104564485" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@joanferplay" href="https://www.tiktok.com/@joanferplay?refer=embed">@joanferplay</a> Como configurar OBS Studio para hacer directos desde Venezuela, así lo hago yo 🇻🇪 <a title="obsstudio" target="_blank" href="https://www.tiktok.com/tag/obsstudio?refer=embed">#obsstudio</a> <a title="obs" target="_blank" href="https://www.tiktok.com/tag/obs?refer=embed">#obs</a> <a title="tutorial" target="_blank" href="https://www.tiktok.com/tag/tutorial?refer=embed">#tutorial</a> <a title="twitch" target="_blank" href="https://www.tiktok.com/tag/twitch?refer=embed">#twitch</a> <a title="twitchvenezuela" target="_blank" href="https://www.tiktok.com/tag/twitchvenezuela?refer=embed">#twitchvenezuela</a> <a title="twitchapure" target="_blank" href="https://www.tiktok.com/tag/twitchapure?refer=embed">#twitchapure</a> <a title="joanferplay" target="_blank" href="https://www.tiktok.com/tag/joanferplay?refer=embed">#joanferplay</a> <a title="tutorialobs" target="_blank" href="https://www.tiktok.com/tag/tutorialobs?refer=embed">#tutorialobs</a> <a title="streamervenezolano" target="_blank" href="https://www.tiktok.com/tag/streamervenezolano?refer=embed">#streamer</a> <a title="venezuela" target="_blank" href="https://www.tiktok.com/tag/venezuela?refer=embed"></a> <a title="apure" target="_blank" href="https://www.tiktok.com/tag/apure?refer=embed">#apure</a> <a title="sanfernandodeapure" target="_blank" href="https://www.tiktok.com/tag/sanfernandodeapure?refer=embed"></a> <a target="_blank" title="♬ Blue Blood - Heinz Kiessling" href="https://www.tiktok.com/music/Blue-Blood-6778968637492430849?refer=embed">♬ Blue Blood - Heinz Kiessling</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></center>
+            
+           <h2>Configura tu OBS studio</h2>
+            <div class="col-sm-12 col-md-3 border border-1">
+            <div class="row alturaRow">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@joanferplay/video/7129729671104564485" data-video-id="7129729671104564485" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@joanferplay" href="https://www.tiktok.com/@joanferplay?refer=embed"></a> Como configurar OBS Studio para hacer directos <a title="obsstudio" target="_blank" href="https://www.tiktok.com/tag/obsstudio?refer=embed"></a> <a title="obs" target="_blank" href="https://www.tiktok.com/tag/obs?refer=embed"></a> <a title="tutorial" target="_blank" href="https://www.tiktok.com/tag/tutorial?refer=embed"></a> <a title="twitch" target="_blank" href="https://www.tiktok.com/tag/twitch?refer=embed"></a> <a title="twitchvenezuela" target="_blank" href="https://www.tiktok.com/tag/twitchvenezuela?refer=embed"></a> <a title="twitchapure" target="_blank" href="https://www.tiktok.com/tag/twitchapure?refer=embed"></a> <a title="joanferplay" target="_blank" href="https://www.tiktok.com/tag/joanferplay?refer=embed"></a> <a title="tutorialobs" target="_blank" href="https://www.tiktok.com/tag/tutorialobs?refer=embed"></a> <a title="streamervenezolano" target="_blank" href="https://www.tiktok.com/tag/streamervenezolano?refer=embed"></a> <a title="venezuela" target="_blank" href="https://www.tiktok.com/tag/venezuela?refer=embed"></a> <a title="apure" target="_blank" href="https://www.tiktok.com/tag/apure?refer=embed"></a> <a title="sanfernandodeapure" target="_blank" href="https://www.tiktok.com/tag/sanfernandodeapure?refer=embed"></a> <a target="_blank" title="♬ Blue Blood - Heinz Kiessling" href="https://www.tiktok.com/music/Blue-Blood-6778968637492430849?refer=embed"></a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+            </div>
 
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robolau/video/7197567501595725061" data-video-id="7197567501595725061" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@robolau" href="https://www.tiktok.com/@robolau?refer=embed">@robolau</a> Respuesta a @andrew_stev 5 páginas web y siftware para empezar con tus streams 💜 <a title="obsstudio" target="_blank" href="https://www.tiktok.com/tag/obsstudio?refer=embed">#obsstudio</a> <a title="streamlabs" target="_blank" href="https://www.tiktok.com/tag/streamlabs?refer=embed">#streamlabs</a> <a title="smallstreamersupport" target="_blank" href="https://www.tiktok.com/tag/smallstreamersupport?refer=embed">#smallstreamersupport</a> <a title="crecerentwitch" target="_blank" href="https://www.tiktok.com/tag/crecerentwitch?refer=embed">#crecerentwitch</a> <a title="empezarentwitch" target="_blank" href="https://www.tiktok.com/tag/empezarentwitch?refer=embed">#empezarentwitch</a> <a title="triggerfyre" target="_blank" href="https://www.tiktok.com/tag/triggerfyre?refer=embed">#triggerfyre</a> <a title="streamelements" target="_blank" href="https://www.tiktok.com/tag/streamelements?refer=embed">#streamelements</a> <a title="canva" target="_blank" href="https://www.tiktok.com/tag/canva?refer=embed">#canva</a> <a title="tipdestreamers" target="_blank" href="https://www.tiktok.com/tag/tipdestreamers?refer=embed">#tipdestreamers</a> <a title="robolau" target="_blank" href="https://www.tiktok.com/tag/robolau?refer=embed">#robolau</a> <a title="gamerentiktok" target="_blank" href="https://www.tiktok.com/tag/gamerentiktok?refer=embed">#gamerentiktok</a> <a target="_blank" title="♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira" href="https://www.tiktok.com/music/Shakira-Bzrp-Music-Sessions-Vol-53-7187522835294881793?refer=embed">♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            <div class="col-sm-12 col-md-3 border border-1">
+            <div class="row alturaRow">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robolau/video/7197567501595725061" data-video-id="7197567501595725061" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@robolau" href="https://www.tiktok.com/@robolau?refer=embed"></a> 5 páginas web y siftware para empezar con tus streams 💜 <a title="obsstudio" target="_blank" href="https://www.tiktok.com/tag/obsstudio?refer=embed"></a> <a title="streamlabs" target="_blank" href="https://www.tiktok.com/tag/streamlabs?refer=embed"></a> <a title="smallstreamersupport" target="_blank" href="https://www.tiktok.com/tag/smallstreamersupport?refer=embed"></a> <a title="crecerentwitch" target="_blank" href="https://www.tiktok.com/tag/crecerentwitch?refer=embed"></a> <a title="empezarentwitch" target="_blank" href="https://www.tiktok.com/tag/empezarentwitch?refer=embed"></a> <a title="triggerfyre" target="_blank" href="https://www.tiktok.com/tag/triggerfyre?refer=embed"></a> <a title="streamelements" target="_blank" href="https://www.tiktok.com/tag/streamelements?refer=embed"></a> <a title="canva" target="_blank" href="https://www.tiktok.com/tag/canva?refer=embed">#canva</a> <a title="tipdestreamers" target="_blank" href="https://www.tiktok.com/tag/tipdestreamers?refer=embed"></a> <a title="robolau" target="_blank" href="https://www.tiktok.com/tag/robolau?refer=embed">#robolau</a> <a title="gamerentiktok" target="_blank" href="https://www.tiktok.com/tag/gamerentiktok?refer=embed"></a> <a target="_blank" title="♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira" href="https://www.tiktok.com/music/Shakira-Bzrp-Music-Sessions-Vol-53-7187522835294881793?refer=embed"></a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+            </div>
 
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robolau/video/7197187734832794886" data-video-id="7197187734832794886" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@robolau" href="https://www.tiktok.com/@robolau?refer=embed">@robolau</a> Respuesta a @fayeidrylgames 5 actividades para que el streamer interactúe con el chat 💜 <a title="smallstreamersupport" target="_blank" href="https://www.tiktok.com/tag/smallstreamersupport?refer=embed">#smallstreamersupport</a> <a title="smallstreamercommunity" target="_blank" href="https://www.tiktok.com/tag/smallstreamercommunity?refer=embed">#smallstreamercommunity</a> <a title="twitchtoks" target="_blank" href="https://www.tiktok.com/tag/twitchtoks?refer=embed">#twitchtoks</a> <a title="tipdestreamers" target="_blank" href="https://www.tiktok.com/tag/tipdestreamers?refer=embed">#tipdestreamers</a> <a title="5cosas" target="_blank" href="https://www.tiktok.com/tag/5cosas?refer=embed">#5cosas</a> <a title="twitchstreamers" target="_blank" href="https://www.tiktok.com/tag/twitchstreamers?refer=embed">#twitchstreamers</a> <a title="crecerentwitch" target="_blank" href="https://www.tiktok.com/tag/crecerentwitch?refer=embed">#crecerentwitch</a> <a title="robolau" target="_blank" href="https://www.tiktok.com/tag/robolau?refer=embed">#robolau</a> <a title="gamerentiktok" target="_blank" href="https://www.tiktok.com/tag/gamerentiktok?refer=embed">#gamerentiktok</a> <a target="_blank" title="♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira" href="https://www.tiktok.com/music/Shakira-Bzrp-Music-Sessions-Vol-53-7187522835294881793?refer=embed">♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            <div class="col-sm-12 col-md-3 border border-1">
+            <div class="row alturaRow">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robolau/video/7197187734832794886" data-video-id="7197187734832794886" style="max-width: 100px;min-width: 325px;" > <section> <a target="_blank" title="@robolau" href="https://www.tiktok.com/@robolau?refer=embed"></a> Respuesta a @fayeidrylgames 5 actividades para que el streamer interactúe con el chat <a title="smallstreamersupport" target="_blank" href="https://www.tiktok.com/tag/smallstreamersupport?refer=embed"></a> <a title="smallstreamercommunity" target="_blank" href="https://www.tiktok.com/tag/smallstreamercommunity?refer=embed"></a> <a title="twitchtoks" target="_blank" href="https://www.tiktok.com/tag/twitchtoks?refer=embed"></a> <a title="tipdestreamers" target="_blank" href="https://www.tiktok.com/tag/tipdestreamers?refer=embed"></a> <a title="5cosas" target="_blank" href="https://www.tiktok.com/tag/5cosas?refer=embed"></a> <a title="twitchstreamers" target="_blank" href="https://www.tiktok.com/tag/twitchstreamers?refer=embed"></a> <a title="crecerentwitch" target="_blank" href="https://www.tiktok.com/tag/crecerentwitch?refer=embed"></a> <a title="robolau" target="_blank" href="https://www.tiktok.com/tag/robolau?refer=embed"></a> <a title="gamerentiktok" target="_blank" href="https://www.tiktok.com/tag/gamerentiktok?refer=embed"></a> <a target="_blank" title="♬ Shakira: Bzrp Music Sessions, Vol. 53 - Bizarrap &#38; Shakira" href="https://www.tiktok.com/music/Shakira-Bzrp-Music-Sessions-Vol-53-7187522835294881793?refer=embed"></a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+            </div>
             
     </section>
     </main>
@@ -50,5 +88,7 @@
             <P>2023</P>
         </div> 
     </header>
+    <!--java bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
 </body>
 </html>

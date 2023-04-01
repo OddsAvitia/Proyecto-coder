@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos</title>
+    <!--css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--favicon-->
     <link rel="shortcut icon" href="../favikachu.ico" type="image/x-icon">
     <!--estilos css-->
     <link rel="stylesheet" href="../ccs/estilos.css">
 </head>
 <body>
+    <style>
+        /*estilos base para los enlaces*/
+        a {  /*todos los elementos <a> */
+            display: inline-block;
+            padding: 16px;
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);           
+        }
+
+        a:hover{ /*todos los elemento <a> cuando el mouse este sobre el*/
+            font-weight: bold;
+            padding: 16px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        a:link{ /*todos los elementos <a> que tengan un atributo href definido SIN VISITAR*/
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
     <header class="headerSticky2">
         <div>
             <img class="Logo" src="../assets/img/oddslogonegro.png" alt="Logo Odds Avitia" width="200px">
@@ -18,11 +42,11 @@
 
         <nav>
             <ul>
-                <li><a class="linkNav2" href="./index.html">Inicio</a></li>
+                <li><a class="linkNav2" href="../index.html">Inicio</a></li>
                 <li><a class="linkNav2" href="#">Juegos</a></li>
-                <li><a class="linkNav2" href="./sobre nosotros.html">Sobre Nosotros</a></li>
-                <li><a class="linkNav2" href="./Aprende.html">Aprende</a></li>
-                <li><a class="linkNav2" href="./extras.html">Extras</a></li>
+                <li><a class="linkNav2" href="../pages/sobre nosotros.html">Sobre Nosotros</a></li>
+                <li><a class="linkNav2" href="../pages/Aprende.html">Aprende</a></li>
+                <li><a class="linkNav2" href="../pages/extras.html">Extras</a></li>
                 <img  src="../assets/img/cafeblanco.png" height="30" width="30" > <a class="linkNav2" href="https://www.patreon.com/OddsAvitia/membership" target="_blank">Cafesito?</a>
             </ul>
         </nav>
@@ -32,37 +56,64 @@
         <section>
             <h1 class="tamañoTexto"> Algunos que te recomendamos!</h1> 
             <center><video src="../assets/video/retro-room-wallpaper.mp4" autoplay muted loop width="100%" height="100%"></video></center>
-        <center><h1 class="tamañoTexto">Phasmophobia </h1></center>
-        <center><img src="../assets/img/phasmophobia.jpg" alt="">
-             <p>Phasmophobia es un juego online cooperativo (4 jugadores), de terror psicologico.</p> 
-             <p>La actividad paranormal va en aumento y depende de ti y de tu equipo usar todo el equipo de caza fantasmas a tu disposición para reunir la mayor cantidad de pruebas posible.</p>
 
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/FJ3M46C4584" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div>
+
+            <div class="row alturaRow">
+            <center><h1 class="tamañoTexto">Phasmophobia </h1></center>
+
+            <div class="col-sm-12 col-md-5 border border-1">
+            <center><img src="../assets/img/phasmophobia.jpg" height="330">
+
             <img class="" src="../assets/img/steam.png" height="30" width="30" > <a class="editText" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">Comprar en Steam</a>
-        </center>
+            </center>
+            </div>
+
+            <div class="col-sm-12 col-md-5 border border-1">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/FJ3M46C4584" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p>Phasmophobia es un juego online cooperativo (4 jugadores), de terror psicologico.</p> 
+            <p>La actividad paranormal va en aumento y depende de ti y de tu equipo usar todo el equipo de caza fantasmas a tu disposición para reunir la mayor cantidad de pruebas posible.</p>
+            </div>
+            </div>
 
 
-            <section>
-                <center><h1 class="tamañoTexto">Fall Guys</h1></center>
-                <center><img src="../assets/img/fallguys.jfif" height="400" width="600">
-                     <p>Fall Guys es un party royale gratuito, multiplataforma y multijugador masivo en el que tú y tus contrincantes compiten en caóticas rondas repletas de obstáculos absurdos hasta que solo quede un ganador.</p> 
-        
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Wj3dUvGLjNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <div>
-                    <img class="" src="../assets/img/epicgames.png" height="30" width="30" > <a class="editText" href="https://store.epicgames.com/es-MX/p/fall-guys" target="_blank">Gratis en EpicGames</a>
-                </center>
+        <section>
+            <div class="row alturaRow">
+            <center><h1 class="tamañoTexto">Fall Guys</h1></center>
+                
+            <div class="col-sm-12 col-md-5 border border-1">
+            <center><img src="../assets/img/fallguys.jfif" height="350" width="550">
+                
+            <img class="" src="../assets/img/epicgames.png" height="30" width="30" > <a class="editText" href="https://store.epicgames.com/es-MX/p/fall-guys" target="_blank">Gratis en EpicGames</a>
+            </center>
+            </div>
+
+            <div class="col-sm-12 col-md-5 border border-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wj3dUvGLjNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p>Fall Guys es un party royale gratuito, multiplataforma y multijugador masivo en el que tú y tus contrincantes compiten en caóticas rondas repletas de obstáculos absurdos hasta que solo quede un ganador.</p> 
+            </div>
+            </div>
 
 
-                <section>
-                    <center><h1 class="tamañoTexto">The Mortuary Assistant </h1></center>
-                    <center><img src="../assets/img/The Mortuary Assistant.jpg" alt="">
-                         <p>A solas con los muertos... Embalsamar cadáveres, desterrar demonios, salvar tu alma..</p>
+        <section>
+            <div class="row alturaRow">
+            <h1 class="tamañoTexto">The Mortuary Assistant </h1>
             
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/dc3Zn6KXito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <div>
-                        <img class="" src="../assets/img/steam.png" height="30" width="30" > <a class="editText" href="https://store.steampowered.com/app/1295920/The_Mortuary_Assistant/" target="_blank">Comprar en Steam</a>
-                    </center>
+            <div class="col-sm-12 col-md-5 border border-1">   
+            <center><img src="../assets/img/The Mortuary Assistant.jpg" height="330">
+
+            <img class="" src="../assets/img/steam.png" height="30" width="30" > <a class="editText" href="https://store.steampowered.com/app/1295920/The_Mortuary_Assistant/" target="_blank">Comprar en Steam</a>
+            </center>
+            </div>
+
+                         
+            <div class="col-sm-12 col-md-5 border border-1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dc3Zn6KXito" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <p>A solas con los muertos... Embalsamar cadáveres, desterrar demonios, salvar tu alma..</p>                        
+            </div>
+            </div>
     </section>
     </main>
 
@@ -72,5 +123,7 @@
             <P>2023</P>
         </div> 
     </header>
+    <!--java bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

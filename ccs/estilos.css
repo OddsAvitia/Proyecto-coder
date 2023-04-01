@@ -130,14 +130,47 @@ ul {
 .editText{
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
 }
 
 .tamañoTexto{
     font-size: 30px;
+    color: black;
+    text-align: left;
+}
+
+.textoForma{
+    color: black;
+    font-size: 17px;
+    text-align: justify;
 }
 
 .formatoParrafos{
     text-align: justify;
 }
+
+.enlaceBox{
+    /* propiedades decorativas */
+border: solid 1px rgb(255, 255, 255);
+padding: 5px;
+display: flexbox;
+font-size: 25px;
+}
+
+.enlaceBox2{
+border: solid 1px rgb(255, 255, 255);
+padding: 5px;
+display: inline-block;
+font-size: 18px;
+}
+
+.alturaRow{
+height: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
