@@ -10,10 +10,16 @@
     <!--favicon-->
     <link rel="shortcut icon" href="./favikachu.ico" type="image/x-icon">
     <!--estilos css-->
-    <link rel="stylesheet" href="./ccs/estilos.css">  
+    <link rel="stylesheet" href="./scss/estilos.css"> 
+    <!--escala dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <section class="medida">
     <style>
         /*estilos base para los enlaces*/
         a {  /*todos los elementos <a> */
@@ -34,6 +40,15 @@
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
         }
+
+        .animate__animated {
+         display: inline-block;
+         margin: 0 0.5rem;
+
+         animation: bounce;/* referring directly to the animation's @keyframe declaration */
+         animation-duration: 4s; /* don't forget to set a duration! */
+}
+
     </style>
 
     <!--esta es la cabecera-->
@@ -48,7 +63,7 @@
                 <li><a class="linkNav" href="#">Inicio</a></li>
                 <li><a class="linkNav" href="./pages/juegos.html">Juegos</a></li>                
                 <li><a class="linkNav" href="./pages/sobre nosotros.html">Sobre Nosotros</a></li>
-                <li><a class="linkNav" href="./pages/Aprende.html">Aprende</a></li>
+                <li><a class="linkNav" href="./pages/aprende.html">Aprende</a></li>
                 <li><a class="linkNav" href="./pages/extras.html">Extras</a></li>
                 <img src="./assets/img/taza-de-cafe.png" height="30" width="30" > <a class="linkNav" href="https://www.patreon.com/OddsAvitia/membership" target="_blank">Cafesito?</a>
             </ul>
@@ -68,7 +83,7 @@
         </section>
 
         <section>                    
-            <h2 class="tamañoTexto">La Rivers</h2>
+            <h2 class="tamañoTexto animate__animated animate__bounce">La Rivers</h2>
             <div class="row alturaRow">
             <div class="col-sm-12 col-md-3 border border-1">
             <img src="./assets/img/larivers.jpg" height="350" width="350">
@@ -78,7 +93,7 @@
             <p>Su nombre es Samantha Rivera, nació el 20 de agosto de 1998 en Monterrey y actualmente es considerada una de las mejores y más exitosas estrellas de twitch por su gran talento y su sentido del humor (nos ha sacado muchas risas :'D) </p>
             <p>Rivers es reconocida por su apariencia única y distintiva. Ha ganado una gran cantidad de seguidores en diferentes plataformas y se ha convertido en una superestrella mundial</p>
             <div class="editText">
-                <img class="" src="./assets/img/twitch.png" height="30" width="30" > <a class="enlaceBox" href="https://www.twitch.tv/rivers_gg" target="_blank"><strong class="">Twitch</strong></a>
+                <img class="animacion" src="./assets/img/twitch.png" height="30" width="30" > <a class="enlaceBox" href="https://www.twitch.tv/rivers_gg" target="_blank"><strong class="">Twitch</strong></a>
 
                 <img class="" src="./assets/img/youtube.png" height="30" width="30" > <a class="enlaceBox" href="https://www.youtube.com/c/rivers_gg" target="_blank"><strong>Youtube</strong></a>
 
@@ -87,7 +102,7 @@
             </div>
 
 
-            <h4 class="tamañoTexto">ElMariana</h4>
+            <h4 class="tamañoTexto animate__animated animate__bounce">ElMariana</h4>
             <div class="row alturaRow">
             <div class="col-sm-12 col-md-3 border border-1">
             <img src="./assets/img/Elmariana.JPG" height="350" width="350" >
@@ -105,7 +120,7 @@
             </div>
             </div>
 
-            <h4 class="tamañoTexto">Rubius</h4>
+            <h4 class="tamañoTexto animate__animated animate__bounce">Rubius</h4>
             <div class="row alturaRow">
             <div class="col-sm-12 col-md-4 border border-1">
             <img src="./assets/img/elrubiu.JPG" height="350" width="450">
@@ -147,5 +162,7 @@
             </header>
      <!--java bootstrap-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script> AOS.init();</script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+/*estilo seccion principal index*/
+.seccionPrincipalIndex{
+    background-color: $color-Principalindex;
+}
+
+.Noticias{
+    background-color:$color-noticias;
+}
+
+/*estilos centrados de texto*/
+.textoCentrado{
+    text-align: center;
+}
+
+/*main seccion Contacto*/
+.letrasBlancas{
+    text-align: center;
+    color: beige;    
+}
+
+.container{
+    object-fit: contain;
+}
+
+.alturaRow{
+    height: auto;
+    }
+    
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
