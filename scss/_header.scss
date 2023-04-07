@@ -13,12 +13,12 @@ header {
 .linkNav {
 	text-decoration: none;
 	color: black;
-	font-size: 20px;
+	font-size: $font-size;
 }
 .linkNav2 {
 	text-decoration: none;
 	color: rgb(255, 255, 255);
-	font-size: 20px;
+	font-size: $font-size;
 }
 ul {
 	list-style: none;
@@ -49,10 +49,6 @@ li {
 	position: relative;
 	margin-top: 1px;
 }
-.colorHeaderPrincipal {
-	background-color: rgb(255, 255, 255);
-}
-
 .headerSticky {
 	background-color: rgb(255, 255, 255);
 	position: sticky;
@@ -64,5 +60,10 @@ li {
 	position: sticky;
 	top: 2px;
 	z-index: 10;
+}
+
+.letrasBlancas {
+	text-align: center;
+	color: beige;
 }
 

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
+    <meta name="description" content="en esta pagina hay informacion sobre nuestra pagina como nuestras redes sociales y en donde nos puedes encontrar fisicamente">
+    <meta name="keywords" content="transformaciones animaciones transiciones ">
+    <title>OddsAvitia - Sobre Nosotros</title>
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--favicon-->
@@ -15,6 +17,7 @@
     <!--animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9e8c8e9c67.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,8 +42,27 @@
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
         }
+
+        .animate__animated3:hover {
+        animation: swing;/* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        animation-iteration-count: infinite;        
+        }
+
+       .animate__animated5{
+        animation: fadeInRightBig;/* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+        animation-delay: 1s;
+       }
+
+       .animate__animated7 {
+         animation: bounceInRight;/* referring directly to the animation's @keyframe declaration */
+         animation-duration: 2s; /* don't forget to set a duration! */
+        }
+
     </style>
     
+    <section class="container-fluid">
     <header class="headerSticky2">
             <div>
                 <img class="Logo" src="../assets/img/oddslogonegro.png" alt="Logo Odds Avitia" width="200px">
@@ -59,19 +81,43 @@
     
     <main class="imagenFondo">
         <section>      
-            <h1 class="tamañoTexto"> Quienes somos?</h1> 
+            <h1 class="tamañoTexto animate__animated animate__bounceInRight"> Quienes somos?</h1> 
             <center><video src="../assets/video/Wallpapers.video.mp4" autoplay muted loop width="100%" height="100%"></video></center>
-            <p>Somos un grupo de amigos que nos encanta la tecnologia, videojuegos, en resumen toda la Geek culture! </p>
-            <p>En esta ocasion, la encargada y editora de esta pagina soy yo Ad Avitia, asi como mis amigos tienen sus propias paginas con secciones especificas.</p>
-            <p>Les adjunto mis redes sociales para que conozcan mas sobre mi :D (las de nuestro equipo estan en remodelacion)</p>
+            <p class="textoCentrado">Somos un grupo de amigos que nos encanta la tecnologia, videojuegos, en resumen toda la Geek culture! <br>
+            En esta ocasion, la encargada y editora de esta pagina soy yo Ad Avitia, asi como mis amigos tienen sus propias paginas con secciones especificas.<br>
+            <strong>Les adjunto mis redes sociales para que conozcan mas sobre mi :D (las de nuestro equipo estan en remodelacion)</p></strong><br>
 
-            <div class="editText">
-               <img class="" src="../assets/img/insta.png" height="40" width="40" > <a href="https://www.instagram.com/avitia.st/" target="_blank">Instagram</a>
-               <img class="" src="../assets/img/twitch.png" height="40" width="40"> <a href="https://www.twitch.tv/oddsavitia" target="_blank">Twitch</a>
-               <img class="" src="../assets/img/facebook-icone-f.png" height="40" width="40"> <a href="https://www.facebook.com/gaming/addavitia777" target="_blank">Facebook</a>
-               <img class="" src="../assets/img/steam.png" height="40" width="40"> <a href="https://steamcommunity.com/id/OddsAvitia/" target="_blank">Steam</a>
-            </div>
-            <h2 class="tamañoTexto">Pertenece a la comunidad para recibir novedades</h2>
+ 
+            <center><div class="card">
+                <picture class="imgBox">
+                    <img src="../assets/img/power3.jpg" alt="">
+                    <img src="../assets/img/odds3.jpeg" alt="">
+                </picture>
+                <div class="detalles">
+                    <div class="contenido">
+                <h2>Ad Avitia</h2>
+                <div class="redes">
+                    <a href="https://www.instagram.com/avitia.st/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/gaming/addavitia777"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.twitch.tv/oddsavitia"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="https://steamcommunity.com/id/OddsAvitia/"><i class="fa-brands fa-steam"></i></a>
+                </div>
+                </div>
+                </div>
+                </div>
+                </center><br>
+               
+
+               <!-- estilo anterior de redes sociales lo dejo en el codigo para no perderlo..
+                <div class="editText">
+                <img class="imgBox" src="../assets/img/insta.png" height="40" width="40" > <a class="animate__animated3 animate__swing" href="https://www.instagram.com/avitia.st/" target="_blank">Instagram</a>
+                <img class="imgBox" src="../assets/img/twitch.png" height="40" width="40"> <a class="animate__animated3 animate__swing" href="https://www.twitch.tv/oddsavitia" target="_blank">Twitch</a>
+                <img class="imgBox" src="../assets/img/facebook-icone-f.png" height="40" width="40"> <a class="animate__animated3 animate__swing" href="https://www.facebook.com/gaming/addavitia777" target="_blank">Facebook</a>
+                <img class="imgBox" src="../assets/img/steam.png" height="40" width="40"> <a class="animate__animated3 animate__swing" href="https://steamcommunity.com/id/OddsAvitia/" target="_blank">Steam</a>
+                -->
+
+
+            <br><h3 class="tamañoTexto">Pertenece a la comunidad para recibir novedades</h3>
             <p>Solo registrate aqui!</p>
             <div>
                 <form class="enlaceBox2" action="">
@@ -103,7 +149,7 @@
             </div>
             </section>
 
-            <h3 class="tamañoTexto">Donde esta Wally?</h3>
+            <h4 class="tamañoTexto animate__animated5 animate__fadeInRightBig">Donde esta Wally?</h4>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54377675.5791952!2d-44.51636457198544!3d33.7102446139135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1676705785041!5m2!1ses-419!2smx" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
     </section>
@@ -114,11 +160,12 @@
             <p>Todos los derechos reservados</p>
             <P>2023</P>
         </div> 
+    </section>
     </header>
     <!--java bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script> AOS.init();</script>
+    <script> AOS.init();</script>
     </section>
 </body>
 </html>

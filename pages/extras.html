@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extras</title>
+    <meta name="description" content="esta pagina contiene contenido extra, pude variar dependiendo del mes, este mes incluimos bloopers de streamers">
+    <meta name="keywords" content="transformaciones animaciones transiciones ">
+    <title>OddsAvitia - Extras</title>
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--favicon-->
@@ -18,7 +20,7 @@
 </head>
 
 <body>
-    <section class="medida">
+    
     <style>
         /*estilos base para los enlaces*/
         a {  /*todos los elementos <a> */
@@ -39,8 +41,15 @@
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
         }
+
+        .animate__animated {
+         animation: bounceInRight;/* referring directly to the animation's @keyframe declaration */
+         animation-duration: 2s; /* don't forget to set a duration! */
+        }
+
     </style>
 
+    <section class="container-fluid">
     <header class="headerSticky2">
         <div>
             <img class="Logo" src="../assets/img/oddslogonegro.png" alt="Logo Odds Avitia" width="200px">
@@ -60,10 +69,9 @@
     </header>
     <main>
         <section>
-            <h1 class="tamañoTexto"> Un ultimo chapuzon..</h1> 
+            <h1 class="tamañoTexto animate__animated animate__bounceInRight"> Un ultimo chapuzon..</h1> 
             <center><video src="../assets/video/aesthetic-pool-wallpaper.mp4" autoplay muted loop width="100%" height="100%"></video></center>
 
-            <div class="container">
             <h1 class="tamañoTexto">Bloopers Rivers</h1>
             <div class="row alturaRow">
             <div class="col-sm-12 col-md-3 border border-1">
@@ -107,11 +115,13 @@
         <p>Todos los derechos reservados</p>
         <P>2023</P>
     </div> 
+    </section>
 </header>
 <!--java bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script> AOS.init();</script>
 </section>
+
 </body>
 </html>

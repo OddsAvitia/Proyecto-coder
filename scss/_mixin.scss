@@ -1,0 +1,5 @@
+@mixin flexible ($flex-wrap){
+display:flex;
+flex-wrap:$flex-wrap;
+}
+

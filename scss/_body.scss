@@ -1,12 +1,7 @@
-/*estilos del body*/
-body{
-    background-color: $color-primario;
+body {
+    background-color: $colorFondo;
 }
 
-.medida{
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 250px;
-    margin-bottom: 0px;
-
+.Noticias {
+    background-image: map-get($estilos, tipofondo, color);
 }

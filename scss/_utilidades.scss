@@ -1,52 +1,42 @@
-.margenSobreNosotros{
+.margenSobreNosotros {
     margin-left: 10px;
 }
-
-.margenComentarios{
+.margenComentarios {
     margin-left: 20px;
     margin-top: 5px;
 }
-
-.margenBotones{
-    margin-left: $margen-botones;
+.margenBotones {
+    margin-left: 50px;
 }
-
-/*edicion formato links finales div*/
-.editText{
+.editText {
     text-decoration: none;
     list-style: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: $font-size;
 }
-
-.tamañoTexto{
+.tamañoTexto {
     font-size: 30px;
     color: black;
     text-align: left;
 }
-
-.textoForma{
+.textoForma {
     color: black;
     font-size: 17px;
     text-align: justify;
 }
-
-.formatoParrafos{
-    text-align: $formato-parrafos;
+.formatoParrafos {
+    text-align: justify;
 }
-
-.enlaceBox{
-    /* propiedades decorativas */
-border: solid 1px rgb(255, 255, 255);
-padding: 5px;
-display: flexbox;
-font-size: 25px;
+.enlaceBox {
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px;
+    display: flexbox;
+    font-size: 25px;
 }
-
-.enlaceBox2{
-border: solid 1px rgb(255, 255, 255);
-padding: 5px;
-display: inline-block;
-font-size: 18px;
+.enlaceBox2 {
+    border: solid 1px rgb(255, 255, 255);
+    padding: 5px;
+    display: inline-block;
+    font-size: 18px;
 }
 

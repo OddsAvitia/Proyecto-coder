@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprende</title>
+    <meta name="description" content="aqui encontraras lo que consideramos que puedes aprender con las encuestas que hacemos al publico, este mes viene como configurar tu stream">
+    <meta name="keywords" content="transformaciones animaciones transiciones ">
+    <title>OddsAvitia - Aprende</title>
     <!--css bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--favicon-->
@@ -39,8 +41,15 @@
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
         }
+
+        .animate__animated {
+         animation: bounceInRight;/* referring directly to the animation's @keyframe declaration */
+         animation-duration: 2s; /* don't forget to set a duration! */
+        }
+
     </style>
 
+    <section class="container-fluid">
     <header class="headerSticky2">
         <div>
             <img class="Logo" src="../assets/img/oddslogonegro.png" alt="Logo Odds Avitia" width="200px">
@@ -60,10 +69,20 @@
     
     <main>
         <section>
-            <h1 class="tamañoTexto">Sabemos que quieres aprender esto..</h1> 
+            <h1 class="tamañoTexto animate__animated animate__bounceInRight">Sabemos que quieres aprender esto..</h1> 
             <center><video src="../assets/video/ellieguitarra.mp4" autoplay muted loop width="100%" height="100%"></video></center>
 
-            
+            <div class="textoTwitch"><strong>
+            <p>1. Crea una cuenta en Twitch: Lo primero que debes hacer es crear una cuenta en Twitch si aún no la tienes. Puedes hacerlo de forma gratuita en el sitio web de Twitch.<br>
+            2. Configura tu perfil: Una vez que hayas creado tu cuenta, configura tu perfil y añade una descripción detallada y atractiva sobre ti y el tipo de contenido que ofrecerás en tus streams.<br>
+            3. Prepara tu equipo: Para hacer streams, necesitarás una computadora con una buena conexión a internet y un micrófono. También puedes considerar invertir en una cámara web y en un micrófono de mayor calidad si lo deseas.<br>
+            4. Descarga el software de streaming: Para transmitir tu contenido en Twitch, necesitarás descargar un software de streaming. OBS es una opción popular y gratuita que te permite grabar y transmitir tus streams en vivo.<br>
+            5. Configura tus ajustes de streaming: Antes de empezar a transmitir, asegúrate de ajustar tus preferencias de streaming en tu software de streaming, como la resolución de vídeo y la calidad de audio.<br>
+            6. Empieza a transmitir: Ahora que todo está configurado, es hora de empezar a transmitir tu contenido. Asegúrate de promocionar tus streams en tus redes sociales y en otros sitios web para atraer a más espectadores.<br>
+            7. Interactúa con tu audiencia: Durante tus streams, interactúa con tu audiencia para crear una comunidad fiel de seguidores. Responde a sus preguntas y comentarios en vivo y ofrece contenido atractivo y divertido para mantenerlos comprometidos.<br>
+            8. Haz crecer tu audiencia: Finalmente, haz crecer tu audiencia a través de la promoción continua de tus streams y colaborando con otros streamers en Twitch. Cuanto más grande sea tu audiencia, más exitoso será tu canal de Twitch.</p>
+            </div></strong>
+
            <h2>Configura tu OBS studio</h2>
             <div class="col-sm-12 col-md-3 border border-1">
             <div class="row alturaRow">
@@ -91,12 +110,14 @@
         <div>
             <p>Todos los derechos reservados</p>
             <P>2023</P>
-        </div> 
+        </div>
+        </section>
     </header>
     <!--java bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>        
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init();</script>
 </section>
+
 </body>
 </html>
